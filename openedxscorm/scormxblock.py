@@ -30,7 +30,7 @@ try:
         # Older Open edX releases have a different import path
         from student.models import CourseEnrollment
     from lms.djangoapps.courseware.models import StudentModule
-except ImportError:
+except:
     CourseEnrollment = None
     StudentModule = None
 
